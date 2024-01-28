@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+#page>img{
+    position: absolute;
+    right: 5%;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 30px;
+    position: absolute;
+    z-index: 9;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+.nav-item{
+    width: auto;
+    height: 60%;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+.navbar-nav>.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.navbar-nav>.nav-link:hover{
+    color: #b11d1d;
+}
+
+/* -----------------main---------------- */
+
+#text{
+    padding: 30px 50px;
+    position: relative;
+    top: 18%;
+    left: 8%;
+    height: 75%;
+    width: 35%;
+    scale: 1.1;
+}
+
+#text>h1{
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+#text>h4{
+    margin-top: 30px;
+    color: #2b2b2b;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+#b2{
+    width: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10%;
+}
+
+#b2:hover{
+    background-color: #3f3f3f;
+}
+
+/* -----------------Page1----------------- */
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+/*    padding: 50px;*/
+}
+
+#page1>#left{
+    position: absolute;
+    right: 5%;
+    height: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+}
+
+#left>.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 33.3%;
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+#left>.box>h4{
+    font-size: 30px;
+}
+
+#left>.box>h1{
+    font-size: 35px;
+}
+
+#left>.box>p{
+    margin-left: 20px;
+}
+
+.text1{
+    margin: 50px 50px;
+    height: 30%;
+    width: 50%;
+    position: absolute;
+}
+
+.text1>h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.text1>h4{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    width: 70%;
+    margin-top: 50px;
+}
+
+/* -----------------Page2----------------- */
+
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(192, 215, 239);
+    display: flex;
+    flex-direction: column;
+}
+
+#page2>h1{
+    margin: 80px 0 30px 50px;
+    font-size: 60px;
+}
+
+#page2>.projects{
+    margin-top: 07%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#calculator, #todo_list, #newsWebsite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calculator>img:hover, #todo_list>img:hover, #newsWebsite>img:hover{
+    opacity: 80%;
+/*  zoom: 110%;*/
+}
+
+.projects_file{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+}
+
+.projects_file:hover{
+    color: #b11d1d;
+}
+
+/* -----------------Page3--------------- */
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(149, 192, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#page3>#getInTouch{
+    margin: 70px 0 70px 0;
+}
+
+#page3>h3{
+    margin: 0 0 150px 0;
+}
+
+#page3>#contactMe{
+    margin: 0 0 30px 0;
+}
+
+/* #page3>.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+} */
+
+.contacts>a{
+    text-decoration: none;
+    margin: 5px 10px 0 10px ;
+}
